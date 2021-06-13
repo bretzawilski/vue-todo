@@ -38,7 +38,14 @@
             <div class="item">
               <input type="checkbox" />
               <li>{{ items[i] }}</li>
-              <p class="font-bold text-red-700">x</p>
+              <p
+                class="font-bold text-red-700"
+                @click="removeTodo"
+                :id="'button-' + i"
+                style="cursor: pointer"
+              >
+                x
+              </p>
             </div>
           </template>
         </ul>
